@@ -38,11 +38,12 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #352202;
+  font-weight: bold;
+  color: #664510;
 }
 
 footer a:hover {
-  color: #ab751d;
+  opacity: 0.8;
 }
 
 .container {
