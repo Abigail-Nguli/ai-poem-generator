@@ -18,6 +18,9 @@ function getPoem(event){
     let context = `Generate a poem in HTML form with each line separated by <br/>, the poem should NOT have a title and the poem should not be more than 5 lines. The last line should be signed with <strong>SheCodes Ai</strong>`;
     
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+    let poem = document.querySelector("#poem");
+    poem.classList.remove("hidden");
+    poem.innerHTML = `<div class="generating">⏳Generating poem about ${searchInput.value}</div>`
 
     axios.get(apiUrl).then(displayPoem);
 }
