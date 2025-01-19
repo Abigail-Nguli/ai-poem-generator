@@ -15,7 +15,7 @@ function getPoem(event){
     let apiKey = "fa483db98dc0o4b7fc5fdbea841a31ta";
     let searchInput = document.querySelector('#search-input');
     let prompt = `Generate a poem about: ${searchInput.value}`;
-    let context = `Generate a poem in HTML form with each line separated by <br/>, the poem should NOT have a title and the poem should not be more than 5 lines. The last line should be signed with <strong>SheCodes Ai</strong>`;
+    let context = `Generate a poem in html form with each line separated by <br/>, the poem should NOT have a title and the poem should not be more than 5 lines. The last line should be signed with <strong>Nguli AI</strong>`;
     
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     let poem = document.querySelector("#poem");
