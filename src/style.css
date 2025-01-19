@@ -101,3 +101,26 @@ footer a:hover {
 .generating {
   animation: blinker 2s linear infinite;
 }
+
+
+/*Small Screen*/
+@media (max-width: 477px) {
+
+  .form-container{
+    margin: 30px 13px;
+    padding: 35px 28px;
+  }
+
+  .poem{
+    margin: 20px 13px;
+  }
+  
+  #search-input{
+    width: 185px;
+  }
+
+  footer{
+    font-size: 14px;
+  }
+
+}
